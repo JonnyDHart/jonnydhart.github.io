@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcade Portfolio</title>
+
+  <!-- Optional: Add a favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #0a0a0a; /* dark to match neon vibes */
+      overflow: hidden;
+    }
+
+    spline-viewer {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Optional: glow around the viewport for that arcade feel */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      box-shadow: inset 0 0 80px rgba(0, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.90/build/spline-viewer.js"></script>
+
+  <!-- Replace this URL with your own Spline scene link -->
+  <spline-viewer url="https://prod.spline.design/LqqBZd1lVtFn5dBQ/scene.splinecode"></spline-viewer>
+
+</body>
+</html>
