@@ -104,7 +104,9 @@
     screen fades.
   </p>
 
-  <a href="#" onclick="window.history.back(); return false;">⬅ Back to Arcade</a>
+  <a href="#" onclick="if (document.referrer) { window.history.back(); } else { window.location.href='index.html'; } return false;">
+  ⬅ Back to Arcade
+  </a>
 
 </body>
 </html>
